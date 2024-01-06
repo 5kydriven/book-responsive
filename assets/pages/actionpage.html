@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../css/styles.css">
+
+        <!-- JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <title>Action & Adventure Books</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <nav class="nav container1">
+                <div class="nav__data">
+                    <a href="mainpage.html" class="nav__logo">
+                        <img src="../images/book-icon-149.png" width="35px">
+                    </a>
+                    
+                    <div class="search-box-container">
+                        <div class="search-box-wrapper">
+                            <input type="text" placeholder="search" class="search-box">
+                            <button class="search-box-icon" disabled>
+                                <i class="ri-search-line"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">                
+                    <ul class="nav__list">
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">                      
+                            <div class="nav__link dropdown__button">
+                                Discover <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                           
+                                        <span class="dropdown__title" >Genres</span>
+                                        <!-- Add genre id if multiple list -->
+                                        <ul class="dropdown__list" id="">
+                                            <li>
+                                                <a href="actionpage.html" class="dropdown__link">Action & Adventure</a>
+                                            </li>
+                                            <!-- <li>
+                                                <a href="#" class="dropdown__link">Bios & History</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Childrens</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Fantasy</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Historical Fiction</a>
+                                            </li> -->
+                                            <li>
+                                                <a href="horrorpage.html" class="dropdown__link">Horror</a>
+                                            </li>
+                                            <!-- <li>
+                                                <a href="#" class="dropdown__link">Literary Fiction</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Mystery & Thriller</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Non-Fiction</a>
+                                            </li> -->
+                                            <li>
+                                                <a href="Romancepage.html" class="dropdown__link">Romance</a>
+                                            </li>
+                                            <!-- <li>
+                                                <a href="#" class="dropdown__link">Science Fiction</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Young Adult</a>
+                                            </li> -->
+                                        </ul>
+                                    </div> 
+                                    
+                                </div>                                  
+                        </li>               
+
+                        <!--=============== DROPDOWN 2 ===============-->
+                        <li class="dropdown__item">                        
+                            <div class="nav__link dropdown__button">
+                                Account <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+    
+                                        <span class="dropdown__title">Account</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Edit Account</a>
+                                            </li>
+                                            <li>
+                                                <a href="../../index.html" class="dropdown__link">Logout</a>
+                                            </li>                                           
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Section 1 -->
+        <div class="container1 section" id="section-one" >
+            <h2 class="book-genre">Action & Adventure genre</h2>
+            <div class="book-container">
+                <div class="book-wrapper" >
+                    <div class="item">
+                        <a href="" class="bookwraper">
+                            <img src="../images/harry.jpg" class="book-cover spec-gen">
+                        </a>
+                        <label>Book Title</label>
+                    </div>
+                    <div class="item">
+                        <a href="">
+                            <img src="../images/harry.jpg" class="book-cover spec-gen">
+                        </a>
+                        <label>Book Title</label>
+                    </div>
+                    <div class="item">
+                        <a href="">
+                            <img src="../images/harry.jpg" class="book-cover spec-gen">
+                        </a>
+                        <label>Book Title</label>
+                    </div>
+                    <div class="item">
+                        <a href="">
+                            <img src="../images/harry.jpg" class="book-cover spec-gen">
+                        </a>
+                        <label>Book Title</label>
+                    </div>
+                    <div class="item">
+                        <a href="">
+                            <img src="../images/harry.jpg" class="book-cover spec-gen">
+                        </a>
+                        <label>Book Title</label>
+                    </div>
+                    <div class="item">
+                        <a href="">
+                            <img src="../images/harry.jpg" class="book-cover spec-gen">
+                        </a>
+                        <label>Book Title</label>
+                    </div>
+                    <div class="item">
+                        <a href="">
+                            <img src="../images/harry.jpg" class="book-cover spec-gen">
+                        </a>
+                        <label>Book Title</label>
+                    </div>
+                    <div class="item">
+                        <a href="">
+                            <img src="../images/harry.jpg" class="book-cover spec-gen">
+                        </a>
+                        <label>Book Title</label>
+                    </div>
+                    <div class="item">
+                        <a href="">
+                            <img src="../images/harry.jpg" class="book-cover spec-gen">
+                        </a>
+                        <label>Book Title</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <!--=============== MAIN JS ===============-->
+        <script src="../js/main.js"></script>
+        <!-- <script type="text/javascript">
+                $('#first-section').owlCarousel({
+                    loop:false,
+                    nav:true,
+                    navText: ["<img src='https://manybooks.net/themes/custom/mnybks/images/arrow-left.png' height='32px'>","<img src='https://manybooks.net/themes/custom/mnybks/images/arrow-right.png' height='32px'>"],
+                    margin: 20,
+                    dots: false,
+                    
+                    responsive:{
+                        0:{
+                            items:2,
+                            nav: false
+                        },
+                        600:{
+                            items:3
+                        },
+                        1000:{
+                            items:6
+                        }
+                    }
+                });
+        </script> -->
+    </body>
+</html>
