@@ -17,13 +17,14 @@
   </head>
   <body>
     <div class="app">
-      <div class="form-container">
+      <form class="form-container" id="loginForm">
         <img src="assets/images/book-icon-149.png" class="logo mb-4" />
         <div class="input mb-3 mt-3">
           <input
             type="email"
             id="username"
-            placeholder=" "
+            value=""
+            required
           />
           <label for="username" class="input-label">Email address</label>
         </div>
@@ -31,13 +32,31 @@
           <input
             type="password"
             id="password"
-            placeholder=" "
+            value=""
+            required
           />
           <label for="password" class="input-label">Password</label>
         </div>
         <button class="btn btn-primary w-100 mb-2">Sign in</button>
-        <label >Don't have an account? <a href="assets/pages/signup.html">Sign up</a></label>
-      </div>
+        <!-- <label >Don't have an account? <a href="assets/pages/signup.html">Sign up</a></label> -->
+      </form>
     </div>
+    <script>
+      document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            var usernameInput = document.getElementById('username').value;
+            var passwordInput = document.getElementById('password').value;
+
+            // Check if the provided credentials are valid
+            if (usernameInput === 'user@gmail.com' && passwordInput === 'user123') {
+                // Redirect to another URL
+                console.log('Redirecting to /dashboard');
+                window.location.href = 'assets/pages/mainpage.html'; // Replace with your desired URL
+            } else {
+                alert('Invalid username or password. Please try again.');
+            }
+        });
+    </script>
   </body>
 </html>
