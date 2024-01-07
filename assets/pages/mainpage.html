@@ -16,7 +16,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <title>Responsive navigation bar - Bedimcode</title>
+        <title>Home</title>
     </head>
     <body>
         <!--=============== HEADER ===============-->
@@ -45,10 +45,7 @@
                 <div class="nav__menu" id="nav-menu">
                     
                     <ul class="nav__list">
-
-                       
-                            
-                        
+ 
                         <!--=============== DROPDOWN 1 ===============-->
                         <li class="dropdown__item">                      
                             <div class="nav__link dropdown__button">
@@ -117,9 +114,9 @@
                                         <span class="dropdown__title">Account</span>
     
                                         <ul class="dropdown__list">
-                                            <li>
+                                            <!-- <li>
                                                 <a href="#" class="dropdown__link">Edit Account</a>
-                                            </li>
+                                            </li> -->
                                             <li>
                                                 <a href="../../index.html" class="dropdown__link">Logout</a>
                                             </li>                                           
@@ -248,10 +245,14 @@
                     responsive:{
                         0:{
                             items:1,
+                            center: true,
                             mouseDrag: true,
                             touchDrag: true,
                             mergeFit: true
-                        }                       
+                        },
+                        1000:{
+                            items:5
+                        }                     
                     }
                 })
         </script>
