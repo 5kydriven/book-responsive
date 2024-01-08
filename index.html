@@ -38,7 +38,7 @@
           <label for="password" class="input-label">Password</label>
         </div>
         <button class="btn btn-primary w-100 mb-2">Sign in</button>
-        <!-- <label >Don't have an account? <a href="assets/pages/signup.html">Sign up</a></label> -->
+        <label >Don't have an account? <a href="assets/pages/signup.html">Sign up</a></label>
       </form>
         <!-- <button class="btn btn-primary w-100 mb-2"><a href="assets/pages/mainpage.html">Sign in</a></button>
         <label >Don't have an account? <a href="assets/pages/signup.html">Sign up</a></label>
@@ -52,8 +52,11 @@
             var usernameInput = document.getElementById('username').value;
             var passwordInput = document.getElementById('password').value;
 
+            const userDb = localStorage.getItem('username');
+            const passDb = localStorage.getItem('password');
+
             // Check if the provided credentials are valid
-            if (usernameInput === 'user@gmail.com' && passwordInput === 'user123') {
+            if (usernameInput === userDb && passwordInput === passDb) {
                 // Redirect to another URL
                 console.log('Redirecting to /dashboard');
                 window.location.href = 'assets/pages/mainpage.html'; // Replace with your desired URL
